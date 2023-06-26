@@ -13,6 +13,8 @@ Proof of Concept for automating a Pipeline using EventBridge and Lambda function
 ![Step 3](https://github.com/gidteo/WestpacNZ-Pipeline-Poc/blob/main/Images/EventB3.png)
 
 ## Lambda Code
+#### Sample Lambda code can be found [here](https://github.com/gidteo/WestpacNZ-Pipeline-Poc/blob/main/lambda_handler.py)
 
-#### Author: 
+
+### Author: 
 Gideon Teo and Jeff Shi
