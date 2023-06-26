@@ -27,16 +27,15 @@ def lambda_handler(event, context):
     model_data_uri = model_data_uri["InferenceSpecification"]["Containers"][0]["ModelDataUrl"] # model.tar.gz path
     
     # create model
-    model_name = "<Model_Name>" + strftime("%Y-%m-%d-%H-%M-%S", gmtime()) # edit model name
-  
+    model_name = "trained-model" + strftime("%Y-%m-%d-%H-%M-%S", gmtime())
     res = sagemaker.create_model(
-        ModelName=model_name,
-        PrimaryContainer={
-            'Image': "683313688378.dkr.ecr.us-east-1.amazonaws.com/sagemaker-xgboost:1.2-2", # edit image
-            'ModelDataUrl': model_data_uri,
-            'Environment': {},
-        },
-        ExecutionRoleArn="<Execution Role>", # edit execution role 
+        ModelName=model_name, # edit model name
+        Containers=[
+        {
+            'ModelPackageName': latest_approved_model,
+            },
+        ],
+        ExecutionRoleArn="arn:aws:iam::507708461453:role/service-role/AmazonSageMaker-ExecutionRole-20230110T134193", # edit execution role 
         EnableNetworkIsolation=False
     )
     
