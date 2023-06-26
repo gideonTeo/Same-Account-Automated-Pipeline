@@ -20,9 +20,9 @@ Proof of Concept for automating a Pipeline using EventBridge and Lambda function
 Below are the workflow implemented in the lambda function:
 
 1. List the model packages filter by `Approved` status; 
-2. Fetch the model data URL from most recent approved model package;
-3. Create the most up-to-date `Approved` SageMaker model;
-4. Sync the new model created in step 3 to the batch transform pipeline;
+2. Fetch the latest approved model package;
+3. Create the most up-to-date SageMaker model can be used in Batch Transform Job;
+4. Sync the new model created in step 3 to the Batch Transform Pipeline;
 
 Please note: you may need to extend the `Timeout` duration for the lambda function.
 
