@@ -1,0 +1,8 @@
+{
+  "detail-type": ["SageMaker Model Package State Change"],
+  "detail": {
+    "ModelPackageGroupName": ["AbaloneModelPackageGroupName"],
+    "ModelApprovalStatus": ["Approved"]
+  },
+  "source": ["aws.sagemaker"]
+}
