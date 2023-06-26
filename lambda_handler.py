@@ -35,7 +35,7 @@ def lambda_handler(event, context):
             'ModelPackageName': latest_approved_model,
             },
         ],
-        ExecutionRoleArn="arn:aws:iam::507708461453:role/service-role/AmazonSageMaker-ExecutionRole-20230110T134193", # edit execution role 
+        ExecutionRoleArn="<Execution_Role>", # edit execution role 
         EnableNetworkIsolation=False
     )
     
