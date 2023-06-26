@@ -15,6 +15,13 @@ Proof of Concept for automating a Pipeline using EventBridge and Lambda function
 ## Lambda Code
 #### Sample Lambda code can be found [here](https://github.com/gidteo/WestpacNZ-Pipeline-Poc/blob/main/lambda_handler.py)
 
+Below are the workflow implemented in the lambda function:
+
+1. List the model packages filter by `Approved` status; 
+2. Fetch the model data URL from most recent approved model package;
+3. Create the most up-to-date `Approved` model;
+4. Sync the new model created in step 3 to the batch transform pipeline;
+
 
 ### Author: 
 Gideon Teo and Jeff Shi
