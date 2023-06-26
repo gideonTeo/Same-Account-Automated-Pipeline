@@ -24,7 +24,7 @@ Below are the workflow implemented in the lambda function:
 3. Create the most up-to-date `Approved` SageMaker model;
 4. Sync the new model created in step 3 to the batch transform pipeline;
 
-Please note: you may need to extend the `Timeout` length for the lambda function.
+Please note: you may need to extend the `Timeout` duration for the lambda function.
 
 ### Author: 
 Gideon Teo and Jeff Shi
