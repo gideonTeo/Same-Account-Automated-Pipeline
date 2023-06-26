@@ -1,6 +1,6 @@
 # WestpacNZ-Pipeline-Poc
 Proof of Concept for automating a Pipeline using EventBridge and Lambda function
-![Pipeline Diagram]([https://github.com/gidteo/WestpacNZ-Pipeline-Poc/blob/main/Images/EventB1.png](https://github.com/gidteo/WestpacNZ-Pipeline-Poc/blob/main/Images/WestpacNZ%20Pipeline.png))
+![Pipeline Diagram](https://github.com/gidteo/WestpacNZ-Pipeline-Poc/blob/main/Images/WestpacNZ%20Pipeline.png)
 
 ## EventBridge
 #### See below for step-by-step guidance on how to create EventBridge that will triggered by Model Package Approval in Pipeline
